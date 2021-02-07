@@ -265,7 +265,7 @@
                         </div>
                         
                           <div class="form-group">
-                        <input type="submit" name="invitation" class="btn btn-block btn-primary" value="보내기">
+                        <input type="submit" id="contactBtn" name="invitation" class="btn btn-block btn-primary" value="보내기">
                     </div>
                         
                         
@@ -328,27 +328,27 @@
                     <form>
                       <div id="invitation_response_confirmationStatus">
                         <div class="radio"><label for="invitation_response_confirmationStatus_0" class="required">
-                          <input type="radio" id="invitation_response_confirmationStatus_0" name="invitation_response[confirmationStatus]" required="required" value="1" checked="checked"> 참석할 수 있습니다.</label>
+                          <input type="radio" id="invitation_response_confirmationStatus_0" name="invitation_response[confirmationStatus]" required="required" value="true" checked="checked"> 참석할 수 있습니다.</label>
                         </div>
                         <div class="form-group">
                           <div id="invitation_response_locations" class=""><div class="checkbox" style="padding-left: 28px;" ><label for="invitation_response_locations_0" class="">
-                          <input type="checkbox"id="invitation_response_locations_0" name="invitation_response[locations][]" value="11">
+                          <input type="checkbox"id="invitation_response_locations_0" name="invitation_response[locations]" value="WEDDING">
                         관청 결혼식(4월 30일, 10시)</label></div>
                               <div class="checkbox"style="padding-left: 28px;"><label for="invitation_response_locations_2" class="">
-                                <input type="checkbox" id="invitation_response_locations_2" name="invitation_response[locations][]" value="13"> 피로연(코로나로 인한 미정)</label>
+                                <input type="checkbox" id="invitation_response_locations_2" name="invitation_response[locations]" value="PARTY"> 피로연(코로나로 인한 미정)</label>
                                </div></div>  </div>
                         <div class="radio"><label for="invitation_response_confirmationStatus_1" class="required">
-                          <input type="radio" id="invitation_response_confirmationStatus_1" name="invitation_response[confirmationStatus]" required="required" value="0"> 참석할 수 없습니다.</label></div>
+                          <input type="radio" id="invitation_response_confirmationStatus_1" name="invitation_response[confirmationStatus]" required="required" value="false"> 참석할 수 없습니다.</label></div>
                         </div>
 
 
                        <div class="form-group">
-                         <label for="name">성함</label>
-                         <input type="text" id="mail_name" name="mail[name]" required="required" placeholder="이름" class="form-control">  </div>
+                         <label for="join_name">성함</label>
+                         <input type="text" id="join_name" name="mail[name]" required="required" placeholder="이름" class="form-control">  </div>
 
                          <div class="form-group">
-                              <label for="email">이메일</label>
-                              <input type="email" class="form-control" id="email" required="required"  placeholder="이메일">
+                              <label for="join_email">이메일</label>
+                              <input type="email" class="form-control" id="join_email" required="required"  placeholder="이메일">
                             </div>
                          <div class="form-group">
                             <label for="adults">참석인원(성인)</label>
@@ -374,13 +374,15 @@
                               </form>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-primary">보내기</button>
+                              <button id="joinBtn" class="btn btn-primary">보내기</button>
                               <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
                             </div>
                             </div>
                           </div>
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="./main.bundle_kr.js" async></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
