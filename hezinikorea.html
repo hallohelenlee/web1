@@ -257,9 +257,9 @@
                 <form name="mail">
                     <div class="data">
                         <div class="column">
-                            <div class="form-group"> <input type="text" id="mail_name" name="mail[name]" required="required" placeholder="이름" class="form-control">  </div>
-                            <div class="form-group"> <input type="email" id="mail_email" name="mail[email]" required="required" placeholder="이메일 주소" class="form-control">  </div>
-                            <div class="form-group"> <input type="text" id="mail_subject" name="mail[subject]" required="required" placeholder="제목" class="form-control">  </div>
+                            <div class="form-group"> <input type="text" id="mail_name" name="mail[name]" required="required" placeholder="이름*" class="form-control">  </div>
+                            <div class="form-group"> <input type="email" id="mail_email" name="mail[email]" required="required" placeholder="이메일 주소*" class="form-control">  </div>
+                            <div class="form-group"> <input type="text" id="mail_subject" name="mail[subject]" required="required" placeholder="제목*" class="form-control">  </div>
                         </div>
                         <div class="column">
                             <div class="form-group"> <textarea id="mail_text" name="mail[text]" required="required" placeholder="전하고 싶은말을 기입해주세요." class="form-control"></textarea>  </div>
@@ -269,6 +269,7 @@
                         <input type="button" id="contactBtn" name="invitation" class="btn btn-block btn-primary" value="보내기">
                     </div>
                         
+                        *표시는 기입하셔야 합니다.
                         
                     </div>
 
@@ -345,11 +346,11 @@
 
                        <div class="form-group">
                          <label for="join_name">성함</label>
-                         <input type="text" id="join_name" name="mail[name]" required="required" placeholder="이름" class="form-control">  </div>
+                         <input type="text" id="join_name" name="mail[name]" required="required" placeholder="이름*" class="form-control">  </div>
 
                          <div class="form-group">
                               <label for="join_email">이메일</label>
-                              <input type="email" class="form-control" id="join_email" required="required"  placeholder="이메일">
+                              <input type="email" class="form-control" id="join_email" required="required"  placeholder="이메일*">
                             </div>
                          <div class="form-group">
                             <label for="adults">참석인원(성인)</label>
@@ -362,16 +363,18 @@
                          </div>
                          <div class="form-group">  <label for="adults">참석인원(아이)</label>
                               <select class="form-control" id="children">
-                                  <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
+                                  <option value="1">0</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3</option>
                                   </select>
                                 </div>
                                 <div class="form-group">
                                   <label for="requests">전하는 말</label>
                                   <textarea id="requests" rows="3" class="form-control"></textarea>
                                 </div>
+                        
+                                *표시는 기입하셔야 합니다.
                               </form>
                             </div>
                             <div class="modal-footer">
