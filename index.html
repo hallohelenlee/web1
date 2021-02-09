@@ -254,29 +254,27 @@ ein Lächeln und teilt mit uns eure Freude, denn dass ist das größte Geschenk,
             <p class="lead"><h2>Kontakt</h2></p>
             <h6>Hast du noch eine Frage oder möchtest uns einfach einmal "Hallo" sagen? Schreib uns!</h6><br>
             <div class="row justify-content-center">
-                  <div class="col-10 col-sm-10 col-md-10 col-lg-6">
-                <form name="mail">
-                    <div class="data">
-                        <div class="column">
-                            <div class="form-group"> <input type="text" id="mail_name" name="mail[name]" required="required" placeholder="Vor- und Nachname*" class="form-control">  </div>
-                            <div class="form-group"> <input type="email" id="mail_email" name="mail[email]" required="required" placeholder="E-Mail-Adresse*" class="form-control">  </div>
-                            <div class="form-group"> <input type="text" id="mail_subject" name="mail[subject]" required="required" placeholder="Betreff*" class="form-control">  </div>
+                <div class="col-10 col-sm-10 col-md-10 col-lg-6">
+                    <form name="mail">
+                        <div class="data">
+                            <div class="column">
+                                <div class="form-group"> <input type="text" id="mail_name" name="mail[name]" required="required" placeholder="Vor- und Nachname*" class="form-control">  </div>
+                                <div class="form-group"> <input type="email" id="mail_email" name="mail[email]" required="required" placeholder="E-Mail-Adresse*" class="form-control">  </div>
+                                <div class="form-group"> <input type="text" id="mail_subject" name="mail[subject]" required="required" placeholder="Betreff*" class="form-control">  </div>
+                            </div>
+                            <div class="column">
+                                <div class="form-group"> <textarea id="mail_text" name="mail[text]" required="required" placeholder="Deine Nachricht an uns" class="form-control"></textarea>  </div>
+                            </div>
                         </div>
-                        <div class="column">
-                            <div class="form-group"> <textarea id="mail_text" name="mail[text]" required="required" placeholder="Deine Nachricht an uns" class="form-control"></textarea>  </div>
-                        </div>
-                         <div class="form-group">
-                        <input type="button" id="contactBtn" name="invitation" class="btn btn-block btn-primary" value="Senden">
-                    </div>
-                        * Pflichtfeld
-
-                    </div>
-
-                   
-                    </div>
-                   
-                </form>
-                  </div>
+                        <small id="pflichtfeld" class="form-text text-left">
+                            * Pflichtfeld
+                        </small>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <button id="contactBtn" class="btn btn-primary">Senden</button>
+                
             </div>
         </div>
     </section>
@@ -375,7 +373,7 @@ ein Lächeln und teilt mit uns eure Freude, denn dass ist das größte Geschenk,
                 </div>
                 <div class="modal-footer">
                     <button id="joinBtn" class="btn btn-primary">Absenden</button>
-                    <button class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                    <button id="joinCloseBtn" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
                 </div>
             </div>
         </div>
